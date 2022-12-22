@@ -5,6 +5,10 @@ const replyRandomAnswer = (repliesArr) => {
     return randomReply
 }
 
+const clearConversation = () =>{
+    location.reload();
+}
+
 const chatInputHandler = () => {
     event.preventDefault();
   const chatInput = document.getElementById("user-input");
