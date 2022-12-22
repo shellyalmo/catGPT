@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:image" content="assets\catGPT_logo.png" />
+    <meta name="author" content="Shelly Almoznino" />
+    <meta
+      property="og:description"
+      content="A conversational cat bot that listens and reacts."
+    />
+    <meta property="og:title" content="catGPT by Shelly Almoznino" />
+    <title>catGPT</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="icon" type="image/x-icon" href="assets/catGPT_icon.png" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="menu">
+        <h1>clear conversation</h1>
+        <h1>dark mode</h1>
+      </div>
+      <div class="chat-box">
+        <h1>chat</h1>
+        <div id="input-display"></div>
+        <div class="chat-input">
+            <form  id="chatForm" autocomplete="off" onsubmit="chatInputHandler()">
+          <div class="input">
+            <input type="text" id="user-input" placeholder="type here..." />
+          </div>
+          </form >
+          <div class="send">
+            <button type="submit" class="btn">
+              <img src="assets/send.jpg" alt="send" />
+            </button>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./chat.js"></script>
+</html>
