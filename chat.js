@@ -9,6 +9,15 @@ const clearConversation = () =>{
     location.reload();
 }
 
+const respondAsCat = () => {
+    fetch("https://cataas.com/cat")
+    .then((Response) => Response.blob())
+    .then(catBlob=>{
+
+        document.getElementById("cat-response")?.setAttribute("src",URL.createObjectURL(catBlob))
+    })
+}
+
 const chatInputHandler = () => {
     event.preventDefault();
   const chatInput = document.getElementById("user-input");
