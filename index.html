@@ -19,26 +19,32 @@
   <body>
     <div class="container">
       <div class="menu">
-        <button type="button" onclick="clearConversation()">Clear conversation</button>
+        <button type="button" onclick="clearConversation()">
+          Clear conversation
+        </button>
         <h1>dark mode</h1>
       </div>
       <div class="chat-box">
         <h1>chat</h1>
-        <div id="input-display"></div>
-        <div class="chat-input">
-            <form  id="chatForm" autocomplete="off" onsubmit="chatInputHandler();respondAsCat()">
-          <div class="input">
-            <input type="text" id="user-input" placeholder="type here..." />
+        <div id="input-display">
+          <div>
+            <img id="cat-response" />
           </div>
-          </form >
+        </div>
+        <div class="chat-input">
+          <form
+            id="chatForm"
+            autocomplete="off"
+            onsubmit="chatInputHandler();respondAsCat()"
+          >
+            <div class="input">
+              <input type="text" id="user-input" placeholder="type here..." />
+            </div>
+          </form>
           <div class="send">
             <button type="submit" class="btn">
               <img src="assets/send.jpg" alt="send" />
             </button>
-          </div>
-          <div >cat image:
-            <img id="cat-response">
-          </div>
           </div>
         </div>
       </div>
