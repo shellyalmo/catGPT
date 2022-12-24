@@ -28,29 +28,31 @@
         </div>
         <hr />
         <div>
-          <div class="links">project code</div>
-          <div class="links">real chat GPT</div>
-          <div class="links">shelly github</div>
+          <div class="links">
+            <a href="https://github.com/shellyalmo/catGPT"
+              ><img src="./assets/guthub.png" /> my code</a
+            >
+          </div>
+          <div class="links">
+            <a href="https://chat.openai.com/chat">real chatGPT</a>
+          </div>
+          <div class="links">
+            <a href="https://www.linkedin.com/in/shelly-almoznino/"
+              ><img src="./assets/linkedin.png" /> LinkedIn</a
+            >
+          </div>
 
           <div class="links" onclick="clearConversation()">
-            🗑 Clear conversation
+            🗑Clear conversation
           </div>
         </div>
       </div>
       <div class="chat-box">
         <div id="input-display">
-          <div>
-            <p>
-              <img class="userAvatar" src="./assets/user_avatar.png" /> question
-            </p>
-          </div>
-          <div class="cat-response">
-            <img src="./assets/catGPT_icon.png" />
-            <img class="catImageResponse" src="https://cataas.com/cat" alt="" />
-          </div>
+          
         </div>
         <div class="chat-input">
-          <form id="chatForm" autocomplete="off">
+          <form id="chatForm" autocomplete="off" onsubmit="chatInputHandler();">
             <div class="input">
               <input
                 type="text"
@@ -59,12 +61,10 @@
                 placeholder="type here..."
               />
             </div>
-          </form>
-          <div class="send">
             <button type="submit" class="btn">
               <img src="assets/send.jpg" alt="send" />
             </button>
-          </div>
+          </form>
         </div>
       </div>
     </div>

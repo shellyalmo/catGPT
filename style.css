@@ -4,7 +4,7 @@
     Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
 }
 
-img{
+.chat-box img{
   width: 30px;
   padding-left: 41px;
 }
@@ -26,6 +26,9 @@ img{
   background-color: rgb(77, 74, 74);
 }
 
+.links img{
+  width: 15px;
+}
 .container {
   display: flex;
   height: 100vh;
@@ -34,7 +37,7 @@ img{
 .chat-box {
   width: 80%;
   background-color: rgb(255, 255, 255);
-  height: 1;
+  height: 100vh;
 }
 
 .chat-input {
@@ -69,5 +72,10 @@ img{
 
 .userAvatar{
   padding-right: 37px;
+}
+
+a {
+  color: inherit; /* blue colors for links too */
+  text-decoration: inherit; /* no underline */
 }
 
