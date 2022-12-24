@@ -5,7 +5,7 @@
 }
 
 .chat-box img{
-  width: 30px;
+  width: 31px;
   padding-left: 41px;
 }
 
@@ -28,6 +28,7 @@
 
 .links img{
   width: 15px;
+  padding-right: 10px;
 }
 .container {
   display: flex;
@@ -49,10 +50,6 @@
     width: 10px;
 }
 
-.cat-response {
-  border: 1px solid rgb(232, 229, 229);
-  background-color:rgba(247,247,248);
-}
 
 .input{
   width: 100%;
@@ -66,7 +63,7 @@
 .userInput{
   width: 100%;
 }
-.catImageResponse{
+.catImageResponse img{
   width: 300px;
 }
 
@@ -79,3 +76,9 @@ a {
   text-decoration: inherit; /* no underline */
 }
 
+
+.menu-box{
+  display: flex;
+  justify-content: space-betwee;
+  flex-direction: column;
+}

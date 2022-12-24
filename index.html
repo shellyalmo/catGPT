@@ -19,38 +19,38 @@
   <body>
     <div class="container">
       <div class="menu">
-        <div>
-          <h1>catGPT</h1>
-          <h3>by Shelly Almoznino</h3>
-          <p>
-            Inspired by chatGPT, but better, because cats are superior to AI.
-          </p>
-        </div>
-        <hr />
-        <div>
-          <div class="links">
-            <a href="https://github.com/shellyalmo/catGPT"
-              ><img src="./assets/guthub.png" /> my code</a
-            >
+        <div class="menu-box">
+          <div> 
+            <h1>catGPT</h1>
+            <h3>by Shelly Almoznino</h3>
+            <p>
+              Inspired by chatGPT, but better, because cats are superior to AI.
+            </p>
           </div>
-          <div class="links">
-            <a href="https://chat.openai.com/chat">real chatGPT</a>
-          </div>
-          <div class="links">
-            <a href="https://www.linkedin.com/in/shelly-almoznino/"
-              ><img src="./assets/linkedin.png" /> LinkedIn</a
-            >
-          </div>
+          <div>
+            <hr />
+            <div class="links">
+              <div class="links">
+                <a href="https://chat.openai.com/chat">real chatGPT</a>
+              </div>
+              <a href="https://github.com/shellyalmo/catGPT"
+                ><img src="./assets/guthub.png" />my code</a
+              >
+            </div>
+            <div class="links">
+              <a href="https://www.linkedin.com/in/shelly-almoznino/"
+                ><img src="./assets/linkedin.png" />my LinkedIn</a
+              >
+            </div>
 
-          <div class="links" onclick="clearConversation()">
-            🗑Clear conversation
+            <div class="links" onclick="clearConversation()">
+              🗑Clear conversation
+            </div>
           </div>
         </div>
       </div>
       <div class="chat-box">
-        <div id="input-display">
-          
-        </div>
+        <div id="input-display"></div>
         <div class="chat-input">
           <form id="chatForm" autocomplete="off" onsubmit="chatInputHandler();">
             <div class="input">
