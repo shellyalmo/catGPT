@@ -19,26 +19,66 @@
   <body>
     <div class="container">
       <div class="menu">
-        <button type="button" onclick="clearConversation()">
-          Clear conversation
-        </button>
-        <h1>dark mode</h1>
+        <div>
+          <h1>catGPT</h1>
+          <h3>by Shelly Almoznino</h3>
+          <p>
+            Inspired by chatGPT, but better, because cats are superior to AI.
+          </p>
+        </div>
+        <hr />
+        <div>
+        <div class="links">project code</div>
+        <div class="links">real chat GPT</div>
+        <div class="links">shelly github</div>
+
+        <div  class="links" onclick="clearConversation()"> 🗑 Clear conversation</div>
+        </div>
       </div>
       <div class="chat-box">
-        <h1>chat</h1>
         <div id="input-display">
           <div>
-            <img id="cat-response" />
+            <p>
+              <img class="userAvatar" src="./assets/user_avatar.png" /> question
+            </p>
+          </div>
+          <div class="cat-response">
+            <img src="./assets/catGPT_icon.png" />
+            <img class="catImageResponse" src="https://cataas.com/cat" alt="" />
+          </div>
+          <div>
+            <p>
+              <img class="userAvatar" src="./assets/user_avatar.png" /> question
+            </p>
+          </div>
+          <div class="cat-response">
+            <img src="./assets/catGPT_icon.png" />
+            <img class="catImageResponse" src="https://cataas.com/cat" alt="" />
+          </div>
+          <div>
+            <p>
+              <img class="userAvatar" src="./assets/user_avatar.png" /> question
+            </p>
+          </div>
+          <div class="cat-response">
+            <img src="./assets/catGPT_icon.png" />
+            <img class="catImageResponse" src="https://cataas.com/cat" alt="" />
+          </div>
+          <div>
+            <p>
+              <img class="userAvatar" src="./assets/user_avatar.png" /> question
+            </p>
           </div>
         </div>
         <div class="chat-input">
-          <form
-            id="chatForm"
-            autocomplete="off"
-            onsubmit="chatInputHandler();respondAsCat()"
-          >
+          <form id="chatForm" autocomplete="off">
             <div class="input">
-              <input type="text" id="user-input" placeholder="type here..." />
+              <input
+                type="text"
+                class="userInput"
+                id="user-input"
+                placeholder="type here..."
+              />
             </div>
           </form>
           <div class="send">
