@@ -15,8 +15,7 @@ img{
   color: white;
   padding-left: 20px;
   line-height: 30px;
- 
-
+  height: 100vh;
 }
 
 .links {
@@ -29,19 +28,20 @@ img{
 
 .container {
   display: flex;
+  height: 100vh;
 }
 
 .chat-box {
   width: 80%;
   background-color: rgb(255, 255, 255);
+  height: 1;
 }
 
 .chat-input {
   display: flex;
   flex-direction: row;
-
+  width: 100%;
 }
-
 .btn img{
     width: 10px;
 }
@@ -55,9 +55,6 @@ img{
   width: 100%;
 }
 
-.chat-input{
-  width: 100%;
-}
 
 #chatForm{
   width: 100%;
