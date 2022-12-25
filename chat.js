@@ -11,12 +11,12 @@ const chatInputHandler = () => {
   document.getElementById("input-display").innerHTML += `<div >
           <div>
             <p id="input-display">
-              <img class="userAvatar" src="./assets/user_avatar.png" /> ${chatInput.value}
+              <img class="avatar" src="./assets/user_avatar.png" /> ${chatInput.value}
             </p>
           </div>
-          <div class="cat-response">
-            <img src="./assets/catGPT_icon.png" />
-            <img class="catImageResponse" src="https://cataas.com/cat?${performance.now()}" alt="" width="120px"/>
+          <div>
+            <img class="avatar" src="./assets/catGPT_icon.png" />
+            <img class="catResponse" src="https://cataas.com/cat?${performance.now()}" alt=""/>
           </div>
         </div>`;
 
