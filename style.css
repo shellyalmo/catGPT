@@ -19,7 +19,7 @@
   color: white;
   padding: 0 20px;
   line-height: 30px;
-  height: 100vh;
+  min-height: 100vh;
 }
 h1 {
   font-size: 36px;
@@ -37,13 +37,13 @@ h1 {
 }
 .container {
   display: flex;
-  height: 100vh;
+
 }
 
 .chat-box {
   width: 80%;
   background-color: rgb(255, 255, 255);
-  height: 100vh;
+  height: 100%;
 }
 
 .chat-input {
@@ -55,16 +55,12 @@ h1 {
   width: 10px;
 }
 
-.input {
-  width: 100%;
-}
-
 #chatForm {
   width: 100%;
   box-shadow: 0 0 transparent;
 }
 .userInput {
-  width: 100%;
+  width: 80%;
 }
 
 .userAvatar {
