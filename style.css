@@ -4,31 +4,76 @@
     Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
 }
 
-img{
-  width: 40%;
+.avatar {
+  width: 31px;
+  padding-left: 41px;
+}
+
+.catResponse {
+  width: 300px;
 }
 
 .menu {
-  background-color: rgb(0, 0, 0);
+  background-color: rgb(43, 44, 49);
   width: 20%;
   color: white;
+  padding: 0 20px;
+  line-height: 30px;
+  min-height: 100vh;
+}
+h1 {
+  font-size: 36px;
+}
+.links {
+  cursor: pointer;
+}
+.link:hover {
+  background-color: rgb(77, 74, 74);
 }
 
+.links img {
+  width: 15px;
+  padding-right: 10px;
+}
 .container {
   display: flex;
+
 }
 
 .chat-box {
   width: 80%;
-  background-color: rgb(169, 169, 181);
+  background-color: rgb(255, 255, 255);
+  height: 100%;
 }
 
 .chat-input {
   display: flex;
   flex-direction: row;
-
+  width: 100%;
+}
+.btn img {
+  width: 10px;
 }
 
-.btn img{
-    width: 10px;
+#chatForm {
+  width: 100%;
+  box-shadow: 0 0 transparent;
+}
+.userInput {
+  width: 80%;
+}
+
+.userAvatar {
+  padding-right: 37px;
+}
+
+a {
+  color: inherit; /* blue colors for links too */
+  text-decoration: inherit; /* no underline */
+}
+
+.menu-box {
+  display: flex;
+  justify-content: space-betwee;
+  flex-direction: column;
 }

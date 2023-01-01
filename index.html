@@ -19,33 +19,57 @@
   <body>
     <div class="container">
       <div class="menu">
-        <button type="button" onclick="clearConversation()">
-          Clear conversation
-        </button>
-        <h1>dark mode</h1>
-      </div>
-      <div class="chat-box">
-        <h1>chat</h1>
-        <div id="input-display">
+        <div class="menu-box">
           <div>
-            <img id="cat-response" />
+            <h1>catGPT</h1>
+            <h3>by Shelly Almoznino</h3>
+            <p>
+              Inspired by chatGPT, but better, because cats are superior to AI.
+            </p>
+          </div>
+          <div>
+            <hr />
+            <div class="links">
+              <div class="link">
+                <a href="https://chat.openai.com/chat" target="_blank"
+                  >Real chatGPT</a
+                >
+              </div>
+              <div class="link">
+                <a href="https://github.com/shellyalmo/catGPT" target="_blank"
+                  ><img src="./assets/guthub.png" />My Code</a
+                >
+              </div>
+              <div class="link">
+                <a
+                  href="https://www.linkedin.com/in/shelly-almoznino/"
+                  target="_blank"
+                  ><img src="./assets/linkedin.png" />My LinkedIn</a
+                >
+              </div>
+
+              <div class="link" onclick="clearConversation()">
+                🗑 Clear Conversation
+              </div>
+            </div>
           </div>
         </div>
+      </div>
+      <div class="chat-box">
+        <div id="input-display"></div>
         <div class="chat-input">
-          <form
-            id="chatForm"
-            autocomplete="off"
-            onsubmit="chatInputHandler();respondAsCat()"
-          >
-            <div class="input">
-              <input type="text" id="user-input" placeholder="type here..." />
-            </div>
-          </form>
-          <div class="send">
+          <form id="chatForm" autocomplete="off" onsubmit="chatInputHandler();">
+            <input
+              type="text"
+              class="userInput"
+              id="user-input"
+              placeholder="type here..."
+            />
+
             <button type="submit" class="btn">
               <img src="assets/send.jpg" alt="send" />
             </button>
-          </div>
+          </form>
         </div>
       </div>
     </div>
